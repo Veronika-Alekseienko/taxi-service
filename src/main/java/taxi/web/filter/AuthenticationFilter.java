@@ -1,4 +1,4 @@
-package mate.web.filter;
+package taxi.web.filter;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 @WebFilter(urlPatterns = "/*")
 public class AuthenticationFilter implements Filter {
     private static final String DRIVER_ID = "driver_id";
-    private Set<String> allowedUrl = new HashSet<>();
+    private final Set<String> allowedUrl = new HashSet<>();
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

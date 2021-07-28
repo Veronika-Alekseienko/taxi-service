@@ -1,4 +1,4 @@
-package mate.controller.driver;
+package taxi.controller.driver;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,15 +7,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import mate.exception.AuthenticationException;
-import mate.lib.Injector;
-import mate.model.Driver;
-import mate.service.AuthenticationService;
+import taxi.exception.AuthenticationException;
+import taxi.lib.Injector;
+import taxi.model.Driver;
+import taxi.service.AuthenticationService;
 
 @WebServlet(urlPatterns = "/login")
 public class LoginDriverController extends HttpServlet {
     private static final String DRIVER_ID = "driver_id";
-    private static final Injector injector = Injector.getInstance("mate");
+    private static final Injector injector = Injector.getInstance("taxi");
     private final AuthenticationService authenticationService =
             (AuthenticationService) injector.getInstance(AuthenticationService.class);
 
