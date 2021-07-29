@@ -1,5 +1,6 @@
 # Taxi Service
 ![taxi](https://i.pinimg.com/originals/97/51/e1/9751e19970fa9e8c5c51ca18533bbb6f.jpg)
+
 The goal of this project is to create a taxi service with authentication system, custom injector, annotations and all the features that might come in handy while managing the app:
 
 * During the first launch you will be redirected to a login page where you have two opportunities:
