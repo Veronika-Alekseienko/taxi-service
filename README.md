@@ -1,6 +1,6 @@
 # Taxi Service
 ![taxi](https://i.pinimg.com/originals/97/51/e1/9751e19970fa9e8c5c51ca18533bbb6f.jpg)
-The goal of this project is to create a taxi service with authentication system, custom injector and annotations and all the features that might come in handy while managing the app:
+The goal of this project is to create a taxi service with authentication system, custom injector, annotations and all the features that might come in handy while managing the app:
 * During the first launch you will be redirected to a login page where you have two opportunities:
     * register a new driver
     * login as a previously registered driver
@@ -25,4 +25,7 @@ Project based on 3-layer architecture:
 2. Install MySQL and MySQL Workbench
 3. Create a schema and all the necessary tables by using the script from resources/init_db.sql in MySQL Workbench
 4. In the /util/ConnectionUtil.java class change the "user" and "password" properties to the ones you specified when installing MySQL
-5. Start the application
+5. In the src/main/resources/log4j2.xml 
+   File name = "File" fileName = "logs\app.log"
+   you need to change "logs\app.log" with absolute path to .log file)   
+6. Start the application
